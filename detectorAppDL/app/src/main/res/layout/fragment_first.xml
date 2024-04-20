@@ -13,20 +13,23 @@
 
         <Button
             android:id="@+id/button_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="138dp"
+            android:layout_height="65dp"
             android:text="@string/next"
             app:layout_constraintBottom_toTopOf="@id/textview_first"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textview_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="407dp"
+            android:layout_height="636dp"
             android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
             android:text="@string/lorem_ipsum"
+            android:textColor="#241E7F"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
