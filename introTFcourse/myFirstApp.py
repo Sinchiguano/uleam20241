@@ -31,4 +31,45 @@ fashion_mnist=tf.keras.datasets.fashion_mnist
 
 
 
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+index=42
+
+
+#set number of characters per row when printing
+np.set_printoptions(linewidth=320)
+
+
+print(f"LABEL: {train_labels[index]}")
+print(f"\n IMAGE PIXEL ARRAY: \n{train_images[index]}")
+
+#VISULIZE THE IMAGE
+# plt.imshow(train_images[index], cmap="Greys")
+plt.imshow(train_images[index])
+plt.show()
+
+#NORMALIZE THE PIXEL VALUES OF THE TRAIN AND TEST IMAGES
+
+train_images=train_images/255
+test_images=test_images/255
+
+
+
+# BUILD THE CLASSIFICATION MODEL
+model=tf.keras.models.Sequential([tf.keras.llayers.Flatten()])
+
+
+
+
+
+
+
+
+
+
+
+
+
 print('ok!!!!!!')
