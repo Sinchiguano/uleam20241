@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Person List</title>
+</head>
+<body>
+    <h1>Person List</h1>
+    <ul>
+        {% for person in persons %}
+            <li>NAME: {{ person.name }} EDAD: ({{ person.age }}) EMAIL:{{ person.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
